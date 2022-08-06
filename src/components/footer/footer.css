@@ -1,0 +1,101 @@
+:root {
+    --ft-background: #3861FB;
+    --ft-text: #ffffff;
+    --ft-h1: #C0C1C5;
+    --ft-link: #FF8E00;
+}
+.ft-con-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: var(--ft-background);
+    width: 100%;
+    height: 300px;
+    color: var(--ft-text);
+}
+.ft-sec {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 40px;
+    width: 50%;
+    color: var(--ft-text);
+}
+.ft-sec-h1 {
+    color: var(--ft-h1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    /*line-height: 27px;*/
+    margin-bottom: 30px;
+}
+.ft-nav, .ft-nav-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style-type: none;
+}
+.ft-nav-lists, .ft-nav-links {
+    text-decoration: none;
+    color: var(--ft-text);
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ft-nav-links:active {
+    border: none;
+    color: var(--ft-text);
+}
+.ft-nav-links:visited {
+    color: var(--ft-link);
+    border: none;
+}
+/*.ft-logo {*/
+/*    background-image: url("../images/logo.svg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: contain;*/
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*}*/
+.ft-p {
+    width: 50%;
+    font-weight: 500;
+    font-size: 18px;
+}
+.ft-brand-logo {
+    display: block;
+    padding: 0;
+    margin-top: 20px;
+}
+.ft-icon-con {
+    margin-right: 20px;
+}
+@media (min-width: 10em) and (max-width: 60em) {
+    .ft-con-main {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 100%;
+    }
+    .ft-sec {
+        border: none;
+        border-bottom: 2px solid var(--ft-h1);
+        width: 80%;
+    }
+    .tracker {
+        border-bottom: none;
+    }
+    .ft-p {
+        width: 80%;
+        font-size: 20px;
+    }
+    .ft-nav-lists, .ft-nav-links {
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
