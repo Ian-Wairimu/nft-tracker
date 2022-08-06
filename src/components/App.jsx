@@ -1,9 +1,10 @@
 import React from "react";
+import Footer from "./footer/Footer";
 
 const App = () => {
     return (
         <>
-            <h1>Hello, tracker</h1>
+            <Footer />
         </>
     )
 }
