@@ -1,0 +1,41 @@
+.navbar{
+    display: flex;
+
+    height: 5vh;
+    margin-bottom: 8rem;
+}
+/* 
+.button-wallet{
+    display: flex;
+    position: absolute;
+    width: 181px;
+    height: 56px;
+   
+    border-radius: 3rem;
+} */
+
+.nav-button{
+    border-radius: 34px;
+    border: none;
+    width: 180px;
+    color: white;
+    font-size: 16px;
+    padding: 11px 26px 11px 26px;
+    background:  #3861FB;
+    /* position: relative; */
+    margin: 50px 10px 0px 120rem;
+  
+  }
+
+  .notification-icon{
+    margin: 50px 10px 0px 5rem;
+  }
+
+   
+/* 
+   .intro-icons>*{
+    transform: scale(0.5);
+   } */
+
+  
+
