@@ -2,8 +2,8 @@ import React from 'react'
 import Logo from "../../images/Logo.png";
 import './Navigation.css';
 import Notification from "../../images/Notification.png";
-import background from "../../images/background.png";
 import Button from "../Button/Button";
+import {Link} from "react-router-dom";
 
 const Navigation = () => {
     const btnObject = [
@@ -18,14 +18,25 @@ const Navigation = () => {
                 <div className="logo--con">
                     <img src={Logo} alt="page logo" className="nav--logo" />
                 </div>
-                 <nav>
-                     {
-                         btnObject.map((v, i) => {
-                             return <Button nameBtn={v.name} className={v.className} />
-                         })
-                     }
-                     <Button />
-                     <img src={Notification} alt="notification icon"/>
+                 <nav className="navigation">
+                     <ul>
+                         <li>
+                             <Link to="/connect wallet"></Link>
+                             {
+                                 btnObject.map((v, i) => {
+                                     return <Button key={i} nameBtn={v.name} className={v.className} />
+                                 })
+                             }
+                         </li>
+                         <li>
+                             <Link to="/notification">
+                                 <img src={Notification} alt="notification icon" className="notification-icon"/>
+                             </Link>
+                         </li>
+                         {/*<li>*/}
+                         {/*    <Link to="/connect wallet"></Link>*/}
+                         {/*</li>*/}
+                     </ul>
                  </nav>
             </div>
         </>

@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Footer from "./Footer/Footer";
 import Navigation from "./Navigation/Navigation";
-import Intro from "./Intro/Intro";
 import {HashLoader} from "react-spinners";
 import "./App.css";
 
@@ -23,7 +22,6 @@ const App = () => {
             </span> : (
                 <div>
                     <Navigation/>
-                    <Intro/>
                     <Footer />
                 </div>
             )}
