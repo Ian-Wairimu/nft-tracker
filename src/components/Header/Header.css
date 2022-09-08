@@ -1,0 +1,24 @@
+.header--nav {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+}
+.header--items > li  {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 10px;
+    list-style-type: none;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header--link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: 1s;
+}
+.header--link:hover {
+    color: #FF8E00;
+}

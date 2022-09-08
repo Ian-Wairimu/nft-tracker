@@ -3,6 +3,7 @@ import Footer from "./Footer/Footer";
 import Navigation from "./Navigation/Navigation";
 import {HashLoader} from "react-spinners";
 import "./App.css";
+import Header from "./Header/Header";
 
 const App = () => {
     const[loading, setLoading] = useState(true);
@@ -22,6 +23,7 @@ const App = () => {
             </span> : (
                 <div>
                     <Navigation/>
+                    <Header />
                     <Footer />
                 </div>
             )}

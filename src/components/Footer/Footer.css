@@ -45,13 +45,9 @@
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 500;
+    transition: 1s;
 }
-
-.ft-nav-links:active {
-    border: none;
-    color: var(--ft-text);
-}
-.ft-nav-links:visited {
+.ft-nav-links:hover {
     color: var(--ft-link);
     border: none;
 }
