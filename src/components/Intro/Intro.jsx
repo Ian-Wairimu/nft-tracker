@@ -4,7 +4,7 @@ import './Intro.css';
 
 function Intro() {
   return (
-    <div className='title'>
+    <div cg  vlassName='title'>
         <div className='title1'>
         <h4>Track and Manage your portfolio</h4>
         </div>
@@ -13,9 +13,6 @@ function Intro() {
         <img src={background}></img>
         </div>
       
-        
-        
-
     </div>
 
 
