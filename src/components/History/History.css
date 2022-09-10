@@ -1,0 +1,89 @@
+.trans-history{
+    padding: 10%;
+    height: 100vh;
+    column-width: auto;
+    background-color:white;
+    font-size: 64px;
+    border: #fff;
+  box-shadow: #ccc;
+}
+
+
+
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.my-assets{
+flex: 1;
+width: 160px;
+background: #FFFFFF;
+box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.1);
+border-radius: 50px;
+
+}
+
+.asset-table{
+    width: 100%;
+    border: 1px so3id #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  
+}
+
+
+.history{
+    flex: 1;
+    margin-left: 5rem;
+background: #FFFFFF;
+box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.1);
+border-radius: 50px;
+}
+
+.history-table {
+   border: none;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    table-layout: fixed;
+    
+  }
+
+  .history-table th{
+    padding: 3px;
+    width: 50rem;
+  }
+
+  .history-table tr {
+    border: 1px solid #ddd;
+    padding: .85em;
+  }
+
+  .history-table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+  
+  }
+
+  .history-table td {
+    border-bottom: 1px solid #ddd;
+    font-size: .8em;
+  
+    padding:10px;
+    
+  }
+
+
+
+
+
+
+
+
+ 
