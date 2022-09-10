@@ -11,7 +11,7 @@ const App = () => {
         setTimeout(() => {
             setLoading(false)
         }, 4000)
-    }, [])
+    }, []);
     return (
         <>
             {loading ? <span className="loader">
@@ -23,7 +23,7 @@ const App = () => {
             </span> : (
                 <div>
                     <Navigation/>
-                    <Header />
+                    <Header />  
                     <Footer />
                 </div>
             )}
