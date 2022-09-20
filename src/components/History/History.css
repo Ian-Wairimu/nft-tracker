@@ -1,0 +1,89 @@
+.trans-history{
+    background-color:white;
+    font-size: 64px;
+    border: #fff;
+    box-shadow: #ccc;
+}
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.my-assets{
+flex: 0.4;
+background: #FFFFFF;
+box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.1);
+border-radius: 50px;
+height: fit-content;
+width: fit-content;
+padding: 1px;
+}
+asset-table tr{
+    padding: 2px;
+} 
+
+.my-assets >:nth-child(1)
+{
+    padding: 10px;
+    font-size: 2rem;
+}
+.asset-table{
+    width: 100%;
+    border: 1px so3id #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+  
+}
+.history{
+flex: 1;
+margin-left: 10px;
+background: #FFFFFF;
+box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.1);
+border-radius: 50px;
+
+}
+
+.history >:nth-child(1){
+    padding: 1px;
+    font-size: 2rem;
+}
+
+.history-table {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .history-table th{
+    padding: 0px;
+    /* width: 50rem; */
+  }
+
+  .history-table tr {
+    border: 1px solid #ddd;
+   
+  }
+
+  .history-table tr {
+    border-bottom: 3px solid #ddd;
+    /* display: block; */
+  
+  }
+
+  .history-table td {
+    border-bottom: 1px solid #ddd;
+    font-size: .8em;
+    
+  }
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,89 @@
+.marketprice{
+    padding: 10%;
+    height: 100vh;
+    background-color:white;
+    font-size: 64px;
+    border: #fff;
+  box-shadow: #ccc;
+}
+
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.my-asset{
+    flex: 1;
+    background: #FFFFFF;
+box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.1);
+border-radius: 50px;
+max-height:5em;
+width: fit-content;
+padding: 5rem;
+}
+
+.trending{
+    flex: 1;
+    margin-left: 10rem;
+background: #FFFFFF;
+box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.1);
+border-radius: 50px;
+padding: 3rem;
+height:fit-content;
+
+}
+
+.trending >:nth-child(1){
+ margin:5rem;
+ font-weight: bold;
+ font-size: 2rem;
+}
+
+
+
+.recently-added{
+    flex: 1;
+    margin-left: 20rem;
+background: #FFFFFF;
+box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.1);
+border-radius: 50px;
+padding: 3rem;
+height:fit-content;
+}
+
+.recently-added >:nth-child(1){
+    margin:5rem;
+    font-weight: bold;
+    font-size: 2rem;
+   }
+   
+
+
+
+  .marketprice-table {
+ border: none;
+ border-collapse: collapse;
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+   width: fit-content;
+    color: #fff;
+  }
+
+  .marketprice-table td {
+    border: none;
+    border-collapse: collapse;
+    padding-left: 10rem;
+     }
+
+    .marketprice-table tr,td {
+    border: none;
+    border-collapse: collapse;
+   margin: 2rem;
+
+  }
+
+

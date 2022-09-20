@@ -1,9 +1,13 @@
 import React, {useEffect, useState} from "react";
-import Footer from "./Footer/Footer";
+import Footer from "../components/footer/Footer";
 import Navigation from "./Navigation/Navigation";
+import History from "./History/History";
+import Marketprice from "./Marketprice/Marketprice";
+import CoinSearch from "./CoinSearch/CoinSearch";
 import {HashLoader} from "react-spinners";
 import "./App.css";
 import Header from "./Header/Header";
+
 
 const App = () => {
     const[loading, setLoading] = useState(true);
@@ -23,11 +27,15 @@ const App = () => {
             </span> : (
                 <div>
                     <Navigation/>
-                    <Header />  
-                    <Footer />
+                    <Header /> 
+                    <History/>
+                    <Marketprice/>
+                    <CoinSearch/> 
+                    <Footer/>
                 </div>
             )}
         </>
+
     )
 }
 
