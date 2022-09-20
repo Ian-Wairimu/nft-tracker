@@ -8,27 +8,28 @@
   
   .coinText {
     color: black;
-    margin-right: 32px;
+    margin: 8px;
   }
   
   .coinSearch {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:10px;
   }
   
   .coinInput {
-    font-size: 1.3rem;
-    padding: 2px !important;
+    font-size: 1.5rem;
+    padding: 10px !important;
     text-align: center;
-    width: 1980px;
+    justify-content: center;
+    width: 70vw;
     height: 85px;
-    padding: 10px 5px;
-     
     font: bold 13px 'lucida sans', 'trebuchet MS', 'Tahoma';
     border: 4;
     background: #fff;
     border-radius: 10px;
-    
   border-radius: 10px;
   
   }

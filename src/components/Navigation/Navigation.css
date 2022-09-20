@@ -1,24 +1,44 @@
-.navbar{
+.nav--con {
     display: flex;
-
-    height: 5vh;
-    margin-bottom: 8rem;
+    position: sticky;
+    padding: 0 20px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
 }
-
-.nav-button{
-    border-radius: 34px;
+.logo--con {
+    display: block;
+    width: 13%;
+    margin-right: auto;
+}
+.nav--logo {
+    width: 100%;
+}
+.navigation > ul > li {
+    display: inline-flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    list-style-type: none;
+    padding: 8px 14px;
+}
+.connect--btn {
     border: none;
-    width: 180px;
+    background-color: #3861FB;
     color: white;
-    font-size: 16px;
-    padding: 11px 26px 11px 26px;
-    background:  #3861FB;
-    margin: 50px 10px 0px 120rem;
-  
-  }
-
-  .notification-icon{
-    margin: 50px 10px 0px 5rem;
-  }
-
-
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9em;
+    transition: 1s;
+}
+.connect--btn:hover {
+    background-color: #FF8E00;
+}
+.notification-icon {
+    width: 80%;
+    height: 100%;
+}

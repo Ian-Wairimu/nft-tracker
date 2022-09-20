@@ -10,7 +10,7 @@ function History() {
 <div className='row'>
 <div className='my-assets box'>
     <span>My Assets</span>
-    <table className = "asset-table" >
+<table className = "asset-table" >
 <tr>
 <td>Bitcoin BTC</td>
 <td>$223.34</td>
@@ -36,16 +36,16 @@ function History() {
 </tr>
 </table>
 </div>
-            <div className='history box'>
-              <span>Transaction History</span>
-              <div className='search'>
-           <FormStyle>
+ <div className='history box'>
+   <span>Transaction History</span>
+     <div className='searchclass'>
+         <FormStyle>
             <div>
-            <FaSearch/>
+            {/* <FaSearch/> */}
             <input type="text" placeholder='Search'/>
-            <button className='search'>Search</button>
+            <button id='search'>Search</button>
             </div>
-           </FormStyle>
+        </FormStyle>
     
           </div>      
 
@@ -55,24 +55,12 @@ function History() {
           <th>Price</th>
           <th>1h</th>
           <th>24h</th>
-
         </tr>
-        {/* {data.map((val, key) => {
-          return (
-            <tr key={key}>
-            
-            </tr>
-          )
-        })} */}
       </table>
             </div>
 
 </div>
-
- 
-
-
-        </div>
+   </div>
 
   )
 }
@@ -80,30 +68,36 @@ function History() {
 const FormStyle =styled.form`
 
 div{
-    width:100%;
-    position:relative;
+    width:100%; 
     margin-top:2rem;
 }
-input{
-  width: 1980px;
-  height: 85px;
-  padding: 10px 5px;
-   
-  font: bold 13px 'lucida sans', 'trebuchet MS', 'Tahoma';
-  border: 4;
-  background: #fff;
-  border-radius: 10px;
-  
- 
+
+searchclass{
+  width: 300px;
+  position: relative;
 }
-.search{
-  background-color:#FF8E00;
-  border:none;
-  border-radius:58px;
-  width: 368px;
-  height: 96px;
-  font-weight:600;
-    font-size:3rem;
+
+input{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+}
+button{
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  right: 0px;
+  z-index: 2;
+  border: none;
+  top: 2px;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: #1e90ff;
+  transform: translateX(2px);
  
 }
 svg{

@@ -70,7 +70,6 @@ div{
     margin-top:2rem;
 }
 input{
-  width: 1980px;
   height: 85px;
   padding: 10px 5px;
    

@@ -4,9 +4,19 @@ import "./CoinTable.css"
 import Coin from "../Coin/Coin";
 import { coinPassed } from "../CoinSearch/CoinSearch";
 
+let PageSize = 10;
+
 const CoinTable = () => {
   const [coins, setCoins] = useState([]);
   const passedCoinName = useContext(coinPassed);
+  const [currentPage, setCurrentPage] =useState(1);
+
+  const currentTableData =useMemo(() =>{
+    const firstPageIndex =(currentPage-1) * PageSize;
+    const lastPageIndex =firstPageIndex + PageSize;
+  return data.slice(firstPageIndex,lastPageIndex);
+
+  },[currentPage]);
 
   useEffect(() => {
     axios
@@ -26,6 +36,8 @@ const CoinTable = () => {
     coin.name.toLowerCase().includes(passedCoinName.toLowerCase())
   );
 
+
+  
   return (
     <>
       <table className = "coinTable" >
@@ -57,6 +69,14 @@ const CoinTable = () => {
         })}
         </tbody>
       </table>
+
+      <Pagination
+        className="pagination-bar"
+        currentPage={currentPage}
+        totalCount={data.length}
+        pageSize={PageSize}
+        onPageChange={page => setCurrentPage(page)}
+      />
     </>
   );
 };
