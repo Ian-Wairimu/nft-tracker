@@ -1,71 +1,93 @@
 import React from 'react'
-import {FaSearch} from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa';
 import styled from "styled-components";
 import "./History.css";
+import Table from 'react-bootstrap/Table';
+import celo from "../../images/celo.png";
+import tether from "../../images/tether.png";
+import eth from "../../images/eth.png";
+import bitcoin from "../../images/bitcoin.png";
 
 function History() {
   return (
-    
-<div className='trans-history'>
-<div className='row'>
-<div className='my-assets box'>
-    <span>My Assets</span>
-<table className = "asset-table" >
-<tr>
-<td>Bitcoin BTC</td>
-<td>$223.34</td>
-</tr>
 
-<tr>
-<td>Ethererum</td>
-<td>$234.34</td>
-</tr>
+    <div className='trans-history'>
+      <div className='row'>
+        <div className='my-assets box'>
+          <span>My Assets</span>
+          <Table className="asset-table">
+            <tr>
 
-<tr>
-<td>Celo</td>
-<td>$224.34</td>
-</tr>
+              <td>Tether<span style={{ color: "#C4C4C4", marginLeft: 10 }}>USDT</span> </td>
+              <td>$223.34</td>
+            </tr>
 
-<tr>
-<td>Filecoin</td>
-<td>$224.34</td>
-</tr>
-<tr>
-<td>Bitcoin</td>
-<td>$224.34</td>
-</tr>
-</table>
-</div>
- <div className='history box'>
-   <span>Transaction History</span>
-     <div className='searchclass'>
-         <FormStyle>
-            <div>
-            {/* <FaSearch/> */}
-            <input type="text" placeholder='Search'/>
-            <button id='search'>Search</button>
+            <tr>
+              <td>Ethereum <span style={{ color: "#C4C4C4", marginLeft: 3 }}>ETH</span></td>
+              <td>$234.34</td>
+            </tr>
+
+            <tr>
+              <td>Celo <span style={{ color: "#C4C4C4", marginLeft: 20 }}>CSD</span> </td>
+              <td>$224.34</td>
+            </tr>
+
+            <tr>
+              <td>Filecoin <span style={{ color: "#C4C4C4", marginLeft: 10 }}>BTC</span> </td>
+              <td>$224.34</td>
+            </tr>
+            <tr>
+              <td>Bitcoin <span style={{ color: "#C4C4C4", marginLeft: 10 }}>BTC</span></td>
+              <td>$224.34</td>
+            </tr>
+          </Table>
+        </div>
+        <div className='history box'>
+          <span>Transaction History</span>
+          <div className='searchclass'>
+            <div className='searchinput'>
+     
+
+                {/* <FaSearch/> */}
+                <input 
+                id='searchcl'
+                  type="text"
+                  placeholder='Search'
+                  style={{
+                    backgroundcolor: 'white',
+                    border: "none",
+                    borderRadius: "100px",
+                    height: "4.6vh",
+                    fontSize: "20px",
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+
+                />
+            <input type="button" id='button-search' value="Search" />
+          
+         
             </div>
-        </FormStyle>
-    
-          </div>      
+          </div>
 
-     <table className='history-table'>
-        <tr>
-          <th>Coin</th>
-          <th>Price</th>
-          <th>1h</th>
-          <th>24h</th>
-        </tr>
-      </table>
-            </div>
+          <Table className='history-table'>
+            <tr>
+              <th>Coin</th>
+              <th>Price</th>
+              <th>1h</th>
+              <th>24h</th>
+            </tr>
+          </Table>
+        </div>
 
-</div>
-   </div>
+      </div>
+    </div>
 
   )
 }
 
-const FormStyle =styled.form`
+const FormStyle = styled.form`
 
 div{
     width:100%; 
@@ -73,7 +95,7 @@ div{
 }
 
 searchclass{
-  width: 300px;
+  width: 100px;
   position: relative;
 }
 
