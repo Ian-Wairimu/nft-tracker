@@ -1,68 +1,71 @@
 .coinSearchCointainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 32px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.coinText {
+  color: black;
+  margin: 8px;
+}
+
+.coinSearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.coinInput {
+  font-size: 1.5rem;
+  padding: 10px !important;
+  text-align: center;
+  justify-content: center;
+  width: 70vw;
+  height: 85px;
+  font: bold 13px 'lucida sans', 'trebuchet MS', 'Tahoma';
+  border: 4;
+  background: #fff;
+  border-radius: 10px;
+  border-radius: 10px;
+
+}
+
+@media screen and (max-width: 720px) {
   .coinText {
-    color: black;
-    margin: 8px;
+    font-size: 1.6rem;
   }
-  
+
+  .coinInput {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coinText {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .coinText {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-right: 0;
+  }
+
   .coinSearch {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin:10px;
   }
-  
+
   .coinInput {
-    font-size: 1.5rem;
-    padding: 10px !important;
-    text-align: center;
-    justify-content: center;
-    width: 70vw;
-    height: 85px;
-    font: bold 13px 'lucida sans', 'trebuchet MS', 'Tahoma';
-    border: 4;
-    background: #fff;
-    border-radius: 10px;
-  border-radius: 10px;
-  
+    width: 60vw;
+    margin-top: 10px;
   }
-  
-  @media screen and (max-width: 720px) {
-    .coinText {
-      font-size: 1.6rem;
-    }  
-    .coinInput {
-      font-size: 1rem;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .coinText {
-      font-size: 1.2rem;
-    }  
-  }
-  
-  @media screen and (max-width: 540px) {
-    .coinText {
-      font-size: 1.6rem;
-      text-align: center;
-      margin-right:0;
-    } 
-    .coinSearch {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .coinInput {
-      width: 60vw;
-      margin-top: 10px;
-    }
-  }
+}

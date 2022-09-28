@@ -1,60 +1,94 @@
 .coinTable {
-    width: 90vw;
-    margin-top: 32px;
-    margin-bottom: 80px;
+  width: 90vw;
+  margin-top: 12px;
+  margin-bottom: 80px;
+  border: 1px solid #CED4DA;
+  border-collapse: collapse;
+
+  /* border-collapse: collapse; */
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.coinTable tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+
+.coinTable tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
 }
 
 table {
-    border: 1px solid #ccc;
-    border-collapse: collapse;
-    margin: 0;
+  /* border: 2px solid #CED4DA; */
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+
+
+}
+
+table tr {
+
+  padding: .35em;
+
+}
+
+.coinTable thead tr {
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.coinTable td {
+  background-color: #ffffff;
+  text-align: left;
+
+}
+
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+th {
+  font-size: 1.6rem;
+}
+
+tr {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
     padding: 0;
-    width: 100%;
-    table-layout: fixed;
-  
-  }
-  
-  table tr {
+    position: absolute;
+    width: 1px;
 
-    padding: .35em;
-  }
-  
-  table th,
-  table td {
-    padding: .625em;
-    text-align: center;
-  }
-  
-  table th {
-    font-size: .85em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
   }
 
-  th {
-      font-size: 1.6rem;
-  }
-  tr {
-      font-size: 1.2rem;
-  }
-  
-  @media screen and (max-width: 1400px) {
-    table {
-      border: 0;
-    }
-    
-    table thead {
-      border: none;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-    }
-    
-    /* table tr {
+  /* table tr {
       border-bottom: 3px solid #ddd;
       display: block;
       margin-bottom: .625em;
@@ -66,22 +100,22 @@ table {
       font-size: .8em;
       text-align: right;
     } */
-    
-    table td::before {
-      content: attr(data-label);
-      float: left;
-      font-weight: bold;
-      text-transform: uppercase;
-      color:#000;
-    }
-    
-    table td:last-child {
-      border-bottom: 0;
-    }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
   }
-  
-  @media screen and (max-width: 720px) {
-    .coinTable {
-      width: 70vw;
-    }
+
+  table td:last-child {
+    border-bottom: 0;
   }
+}
+
+@media screen and (max-width: 720px) {
+  .coinTable {
+    width: 70vw;
+  }
+}
