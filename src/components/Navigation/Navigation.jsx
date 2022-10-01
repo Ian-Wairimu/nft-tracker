@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import Logo from "../../images/Logo.png";
 import './Navigation.css';
-import Notification from "../../images/Notification.png";
+// import Notification from "../../images/Notification.png";
 import Button from "../Button/Button";
 import {Link} from "react-router-dom";
+import {IoMdNotificationsOutline} from "react-icons/all";
 
 const Navigation = () => {
     // state variable used to store our user public wallet
@@ -39,7 +40,7 @@ const Navigation = () => {
             console.log("connected", accounts[0]);
             setCurrentAccount(accounts[0]);
         }catch (e) {
-            console.log(e.message());
+            console.log(e.message);
         }
     };
     useEffect(() => {
@@ -63,7 +64,8 @@ const Navigation = () => {
                          </li>
                          <li>
                              <Link to="/notification">
-                                 <img src={Notification} alt="notification icon" className="notification-icon"/>
+                                 {/*<img src={Notification} alt="notification icon" className="notification-icon"/>*/}
+                                 <IoMdNotificationsOutline size={30}/>
                              </Link>
                          </li>
                          {/*<li>*/}

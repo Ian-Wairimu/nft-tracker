@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import Footer from "../components/footer/Footer";
+import Footer from "./Footer/Footer";
 import Navigation from "./Navigation/Navigation";
 import History from "./History/History";
 import Marketprice from "./Marketprice/Marketprice";
@@ -27,10 +27,7 @@ const App = () => {
             </span> : (
                 <div>
                     <Navigation/>
-                    <Header /> 
-                    <History/>
-                    <Marketprice/>
-                    <CoinSearch/> 
+                    <Header />
                     <Footer/>
                 </div>
             )}

@@ -1,37 +1,63 @@
-import React from "react"
-import {Link} from "react-router-dom";
-import "./Header.css";
+import React, {useState} from "react";
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import {TabContext, TabList, TabPanel} from "@mui/lab";
+import {Dashboard} from "../HeaderComponents/Dashboard";
+import {MarketPrice} from "../HeaderComponents/MarketPrice";
+import {News} from "../HeaderComponents/News";
+import {NFT} from "../HeaderComponents/NFT";
+import {DashboardComp} from "./components/DashboardComp";
 
 const Header = () => {
+    const [value, setValue] = useState('1');
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
+
     return (
-        <>
-            <nav className="header--nav">
-                <ul className="header--items">
-                    <li>
-                        <Link to="/dashboard" className="header--link">
-                            Dashboard
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/market price" className="header--link">
-                            Market Price
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/nft" className="header--link">
-                            NFTs
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/news" className="header--link">
-                            News
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
-        </>
-    )
+        <Box sx={{ width: '100%' }}>
+            <TabContext value={value}>
+                <Box>
+                    <TabPanel value="1">
+                        <Dashboard />
+                    </TabPanel>
+                    <TabPanel value="2">
+                        <MarketPrice />
+                    </TabPanel>
+                    <TabPanel value="3">
+                        <NFT />
+                    </TabPanel>
+                    <TabPanel value="4">
+                        <News />
+                    </TabPanel >
+                    <TabList
+                        aria-label="my tab component"
+                        onChange={handleChange}
+                        textColor="secondary"
+                        indicatorColor="secondary"
+                    >
+                        <Tab label="Dashboard" value="1" />
+                        <Tab label="Market place" value="2" />
+                        <Tab label="NFTs" value="3" />
+                        <Tab label="News" value="4" />
+                    </TabList>
+                </Box>
+                <TabPanel value="1">
+                    <DashboardComp />
+                </TabPanel>
+                <TabPanel value="3">
+                    moon
+                </TabPanel>
+                <TabPanel value="4">
+                    moon
+                </TabPanel>
+                <TabPanel value="5">
+                    moon
+                </TabPanel>
+            </TabContext>
+        </Box>
+    );
 }
 
 export default Header;
-

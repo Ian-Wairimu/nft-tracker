@@ -1,0 +1,36 @@
+.header--img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 300px;
+}
+.h1--con {
+    font-size: 3.5em;
+    font-weight: 600;
+}
+.dashboard {
+    background-image: url("../../images/dashboard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.marketPrice {
+    background-image: url("../../images/marketPrice.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nft {
+    background-image: url("../../images/nftTracker.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.news {
+    background-image: url("../../images/newsTracker.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
