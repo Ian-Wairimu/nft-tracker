@@ -1,9 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Footer from "./Footer/Footer";
 import Navigation from "./Navigation/Navigation";
-import History from "./History/History";
-import Marketprice from "./Marketprice/Marketprice";
-import CoinSearch from "./CoinSearch/CoinSearch";
 import {HashLoader} from "react-spinners";
 import "./App.css";
 import Header from "./Header/Header";
