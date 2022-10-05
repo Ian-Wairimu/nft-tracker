@@ -41,7 +41,7 @@ function Marketprice() {
 
         <tr>
         <td>bitcoin (BTC)</td>
-        <td>20.43%</td>
+        <td>20.439%</td>
         </tr>
 
         <tr>

@@ -7,6 +7,7 @@ import {MarketPrice} from "../HeaderComponents/MarketPrice";
 import {News} from "../HeaderComponents/News";
 import {NFT} from "../HeaderComponents/NFT";
 import {DashboardComp} from "./components/DashboardComp";
+import Marketprice from "../Marketprice/Marketprice";
 
 const Header = () => {
     const [value, setValue] = useState('1');
@@ -47,7 +48,7 @@ const Header = () => {
                     <DashboardComp />
                 </TabPanel>
                 <TabPanel value="3">
-                    moon
+                    <Marketprice />
                 </TabPanel>
                 <TabPanel value="4">
                     moon
