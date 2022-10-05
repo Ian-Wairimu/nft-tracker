@@ -15,7 +15,7 @@ function Marketprice() {
        <table className='marketprice-tables'>
        <tr>
         <td>bitcoin (BTC)</td>
-        <td>20.43%</td>
+        <td>20.73%</td>
         </tr>
 
         <tr>
