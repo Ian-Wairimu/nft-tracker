@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import Footer from "./Footer/Footer";
+import Footer from "../components/footer/Footer";
 import Navigation from "./Navigation/Navigation";
 import {HashLoader} from "react-spinners";
 import "./App.css";
